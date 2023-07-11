@@ -1,3 +1,107 @@
 *{
+    margin: 0;
+    padding: 0;
     font-family: 'Josefin Sans', sans-serif;
 }
+
+/* Header section start */
+header{
+    margin: 0 auto;
+    padding-top: 80px;
+    width: 80%;
+}
+
+/* Nav section start */
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.logo{
+    font-size: 25px;
+    font-weight: 800;
+}
+.nav-item{
+    display: flex;
+    align-items: center;
+}
+.nav-items{
+    font-size: 18px;
+    font-weight: bold;
+    list-style: none;
+    margin-left: 30px;
+}
+
+.fa-cart-shopping,.fa-magnifying-glass{
+    font-size: 25px;
+}
+
+/* Nav section end */
+
+/* Artical section start */
+.artical-1{
+    display: flex;
+    justify-content: space-between;
+}
+.header-ar1-h1{
+    padding-top: 130px;
+    font-size: 60px;
+}
+
+.artical1-p{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.artical-img img{
+    border-radius: 50%;
+    border: 4px solid rgb(221, 216, 216);
+    padding: 10px;
+}
+
+.preebook-btn{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    background-color: rgb(247, 35, 141);
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    padding: 13px 25px;
+}
+
+.preebook-btn i{
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+/* Artical section End */
+
+.sponsor-sec{
+    display: flex;
+    justify-content: space-around;
+    border-top: 2px solid rgb(191, 190, 190);
+    border-bottom: 2px solid rgb(191, 190, 190);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+/* Header section end */
+
+/* Product section start */
+
+.product-sec{
+
+}
+
+.pro-h1{
+    
+}
+
+/* Product section end */

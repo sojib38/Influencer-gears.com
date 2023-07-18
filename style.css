@@ -12,6 +12,10 @@ header{
 }
 
 /* Nav section start */
+
+.nav-responsive{
+    display: none;
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -31,19 +35,62 @@ nav{
     font-weight: bold;
     list-style: none;
     margin-left: 30px;
+    background-image: url;
 }
 
 .fa-cart-shopping,.fa-magnifying-glass{
     font-size: 25px;
 }
 
+
+/* Responsive section */
+
+@media (max-width: 540px){
+    header{
+        margin: 0 auto;
+        padding-top: 50px;
+        width: 100%;
+    }
+
+    nav{
+        display: none;
+    }
+    .rs-container > .logo{
+        text-align: center;
+    }
+    .nav-responsive{
+        display: block;
+    }
+
+    .rs-container{
+        margin: 0px 10%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+
+/* Responsive section */
+
 /* Nav section end */
 
+
+
+
 /* Artical section start */
+
+
+/* Responsive section */
+
+
+
+/* Responsive section end */
 .artical-1{
     display: flex;
     justify-content: space-between;
 }
+
 .header-ar1-h1{
     padding-top: 130px;
     font-size: 60px;
@@ -56,10 +103,15 @@ nav{
     font-weight: bold;
 }
 
+.artical-img{
+    background-image: url(images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 490px;
+}
 .artical-img img{
     border-radius: 50%;
-    border: 4px solid rgb(221, 216, 216);
-    padding: 10px;
+    padding: 35px;
 }
 
 .preebook-btn{
@@ -73,8 +125,13 @@ nav{
     border: none;
     outline: none;
     padding: 13px 25px;
+    transition: 1s;
 }
 
+.preebook-btn:hover{
+    background-color: #121212;
+    color: white;
+}
 .preebook-btn i{
     font-size: 20px;
     margin-left: 15px;
@@ -97,11 +154,155 @@ nav{
 /* Product section start */
 
 .product-sec{
+    width: 80%;
+    margin: 0 auto;
+}
 
+.uni-card{
+    padding: 15px 15px;
+    box-shadow: 10px 8px 10px 8px gainsboro;
+    border-radius: 5px;
 }
 
 .pro-h1{
-    
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 70px;
 }
 
+.product-items{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 40px;
+    justify-items: center;
+}
+
+.pro-name-h1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.pro-name-h1 .price{
+    margin-top: 15px;
+}
+
+.rating-p i{
+    font-size: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: rgba(239, 171, 11, 0.986);
+}
+
+.rating-p span{
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 5px;
+    color: rgb(129, 129, 129);
+}
+
+.pro-disc{
+    margin-top: 5px;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: bold;
+    color: rgb(129, 129, 129);
+}
+
+/* card section end */
+
+.see-more{
+    text-align: right;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    margin-right: 40px;
+    font-size: 19px;
+    font-weight: 600;
+    color: rgb(247, 35, 141);
+}
 /* Product section end */
+
+/* Featured Section start */
+
+.artical-2{
+    margin: 0 auto;
+    margin-bottom: 100px;
+    width: 80%;
+    display: flex;
+    gap: 100px;
+}
+
+.featured-h1{
+    font-size: 47px;
+    margin-bottom: 50px;
+}
+
+.featured-p{
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 800;
+    color: rgb(108, 106, 106);
+    line-height: 25px;
+}
+
+.join-btn{
+    padding: 15px 30px;
+    color: white;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: rgba(255, 12, 121, 0.989);
+    transition: 1s;
+}
+
+.join-btn i{
+    margin-left: 10px;
+}
+
+.join-btn:hover{
+    background-color: #121212;
+    color: white;
+}
+/* Featured Section end */
+
+
+/* Footer section start */
+
+footer{
+    text-align: center;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #121212;
+}
+
+.footer-h1{
+    color: white;
+}
+
+.footer-p{
+    font-size: 15px;
+    line-height: 28px;
+    margin-top: 10px;
+    color: rgb(205, 199, 199);
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+footer .fa-brands{
+    color: white;
+    font-size: 20px;
+}
+
+.dev-by{
+    margin-top: 15px;
+    color: white;
+}
+/* Footer section end */
